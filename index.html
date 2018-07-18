@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 
 <head>
-    <!-- Required meta tags -->
+    <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-
+    <!--my css-->
     <link rel="stylesheet" href="./css/myweb-toshare.css?ver=0.1.2">
 
     <title>It's toShare</title>
+
+    <script>
+        $(function () {
+            var nua = navigator.userAgent
+            var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf(
+                'AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+            if (isAndroid) {
+                $('select.form-control').removeClass('form-control').css('width', '100%')
+            }
+        })
+    </script>
 </head>
 
 <body>
@@ -54,8 +60,17 @@
             </div>
         </div>
     </div>
-    <!-- Own JS -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <!-- My JS -->
     <script src="./js/main.js"></script>
+    
 </body>
 
 </html>
