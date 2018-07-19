@@ -5,10 +5,23 @@ html {
 }
 
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #6499F7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*background-color: #6499F7;*/
     padding: 0;
     margin: 0;
+}
+
+/* 当做背景图了 */
+
+#backgroundimg {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 #home-nav {
@@ -44,11 +57,12 @@ body {
 #intro1 {
     margin: auto;
     width: 10rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 2.8rem;
     color: #F0F8FF;
     transition: all .4s;
     line-break: auto;
+    cursor: pointer;
 }
 
 #intro1:hover {
