@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/animate.css" rel="stylesheet">
+
+    <!--my css-->
+    <link rel="stylesheet" href="./css/toshare.css">
+
+    <title>It's toShare</title>
+
+    <script>
+        $(function () {
+            var nua = navigator.userAgent
+            var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf(
+                'AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+            if (isAndroid) {
+                $('select.form-control').removeClass('form-control').css('width', '100%')
+            }
+        })
+    </script>
+    <title>toShare</title>
+</head>
+
+<body>
+    <div id="home-header">
+        <div class=".container">
+            <nav id="home-nav" class="navbar navbar-expand-md navbar-light ">
+                <div class="container">
+                    <a class="navbar-brand" style="color:#F0F8FF;">toShare</a>
+                    <!-- 占位 -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="home-main">
+        <div class=".container">
+            <div class="container">
+               <div class="sharePanel">
+                   <div class="titleBar">
+                    <div class="disLike"></div>
+                   </div>
+                   <img id="userhead">
+                   <div class="mainShare">
+
+                   </div>
+                   <div class="bottomBar">
+                    <div class="like"></div>
+                    <div class="comment"></div>
+                    <div class="shareTo"></div>
+                   </div>
+
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="home-footer">
+        <div id="information" class="information">
+            <div class="en">
+                By Carl
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- My JS -->
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
