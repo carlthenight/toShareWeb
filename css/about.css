@@ -1,0 +1,49 @@
+html {
+    /*10 ÷ 16 × 100% = 62.5% 1rem=10px*/
+    /* 1rem=10px*/
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: #6499F7; */
+    padding: 0;
+    margin: 0;
+}
+
+/* 当做背景图了 */
+
+#backgroundimg {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    user-select: none;
+}
+
+.main{
+    color:#F0F8FF;
+    text-align: center;
+}
+
+.maininfo{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 12rem;
+}
+
+#title{
+    font-size: 2.2rem;
+}
+
+#abouttoshare{
+    font-size: 1.5rem;
+}
+
+
