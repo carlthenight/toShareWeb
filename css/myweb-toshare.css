@@ -74,6 +74,10 @@ body {
     transform: translateX(2rem);
 }
 
+#CarlInfo {
+    cursor: pointer;
+}
+
 #home-footer {
     width: 100%;
     position: fixed;
